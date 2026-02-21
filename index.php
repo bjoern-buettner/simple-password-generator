@@ -41,5 +41,5 @@ switch($_GET['charset']) {
         case '16':
                 exit(allToString($_GET['length'], $arrays['hex']));
         default:
-                header("HTTP 422: Unprocessable Entity", 422, true);
+                header("HTTP 422: Unprocessable Entity", true, 422);
 }
