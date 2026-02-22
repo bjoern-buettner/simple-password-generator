@@ -1,7 +1,7 @@
 <?php
 
 // GET passwordgen.bjoern-buettner.me/?l=19&c=a
-
+header('Content-type: text/plain; charset=ascii', true, 200);
 $_GET['length'] = intval($_GET['length'] ?? $_GET['l'] ?? 10, 10);
 $_GET['charset'] = $_GET['charset'] ?? $_GET['c'] ?? 'ascii';
 
